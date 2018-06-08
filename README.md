@@ -1,19 +1,32 @@
-larval練習--題目:php_crud
+larval_preactice:ajax for php_crud 
 
 
-內部應用:
+use:
 
-model
+	model:
+		Article
+	view:
+		layout:
+			app
+		index
+		read
+		_modal
+	controller:
+		CRUDController
 
-controller
+	route:
+		"/"
+		"/read/{id}"
+		"edit"
+		"delete"
+	database:
 
-route
+		seeder:
+			ArticleTableSeeder		
 
-
-database:
-
-	seeder
-
-	factory-facker
-
-	margin
+		factory-facker:
+			ArticleFactory
+		
+		margin:
+			create_data_table
+			user_table
